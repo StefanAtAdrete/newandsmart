@@ -1,0 +1,27 @@
+ai.settings:
+  type: mapping
+  label: 'AI Settings'
+  mapping:
+    prompt_logging:
+      type: boolean
+      label: 'If the AI should log prompts'
+    prompt_logging_tags:
+      type: string
+      label: 'Tags to log prompts with'
+    default_providers:
+      type: mapping
+      label: 'Default providers'
+      mapping:
+         '*':
+          type: mapping
+          label: 'Operation Type'
+          mapping:
+            provider_id:
+              type: string
+              label: 'Provider ID'
+            model_id:
+              type: string
+              label: 'Model ID'
+    _core:
+      type: _core_config_info
+      label: 'Core config info'

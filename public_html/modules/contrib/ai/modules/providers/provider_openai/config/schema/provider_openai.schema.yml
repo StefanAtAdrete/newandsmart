@@ -1,0 +1,16 @@
+provider_openai.settings:
+  type: mapping
+  label: 'OpenAI Settings'
+  mapping:
+    api_key:
+      type: string
+      label: 'The API key for OpenAI via Key module'
+    moderation:
+      type: boolean
+      label: 'Enable moderation requests before each request.'
+    host:
+      type: string
+      label: 'The host to use for the API requests.'
+    _core:
+      type: _core_config_info
+      label: 'Core config info'

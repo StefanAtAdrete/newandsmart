@@ -1,0 +1,15 @@
+ai_logging.settings_form:
+  path: '/admin/config/ai/logging/settings'
+  defaults:
+    _form: '\Drupal\ai_logging\Form\AiLogFormSettings'
+    _title: 'AI Logging Settings'
+  requirements:
+    _permission: 'administer ai'
+
+ai_logging.list_page:
+  path: '/admin/config/ai/logging'
+  defaults:
+    _controller: '\Drupal\ai\Controller\ProviderSetupList::list'
+    _title: 'AI Logging'
+  requirements:
+    _permission: 'administer ai'
